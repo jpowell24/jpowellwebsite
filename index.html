@@ -6,14 +6,14 @@
 <h1>Jackson Powell homepage</h1>
 
 <body>
-
-  Updated as of: <span id="demo"></span>
   
   <script>
     function myFunction() {
       var x = document.lastModified;
-      document.getElementById("demo").innerHTML = x;
+      document.getElementById("demo").innerHTML = new Date(document.lastModified).toISOString().substr(11, 8);
     }
+
+    myFunction()
   </script>
 
 <p>
@@ -23,6 +23,7 @@
 
 
   <p>
+    <br> Updated as of: <span id="demo"></span>
     <br>
     <br> Email: jrp24@sas.upenn.edu or
     <a href="mailto:jrp24@sas.upenn.edu">send</a>
