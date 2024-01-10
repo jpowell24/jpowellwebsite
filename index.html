@@ -7,12 +7,22 @@
 
 <body>
 
+function myFunction() {
+    var x = document.lastModified;
+    document.getElementById("demo").innerHTML = new Date(document.lastModified).toISOString().substr(11, 8);
+}
+  
+myFunction()
+
 <p>
+    
     <img src="jacksonpfp.jpg" alt="jacksonpfp"   style="float:right;width: 20%;height: auto">
 </p>
 
 
-  <p>Email: jrp24@sas.upenn.edu or
+  <p>Updated as of: <span id='demo'></span>
+    <br>
+    <br> Email: jrp24@sas.upenn.edu or
     <a href="mailto:jrp24@sas.upenn.edu">send</a>
     <br> 
     <br> Github: (<a href="https://github.com/jpowell24">link</a>) 
