@@ -5,15 +5,14 @@
 
 <h1>Jackson Powell homepage</h1>
 
-<body>
+<body onload="myFunction()">
+  Updated as of: <span id="demo"></span>
   
   <script>
     function myFunction() {
       var x = document.lastModified;
-      document.getElementById("demo").innerHTML = new Date(document.lastModified).toISOString().substr(11, 8);
+      document.getElementById("demo").innerHTML = x;
     }
-
-    myFunction()
   </script>
 
 <p>
